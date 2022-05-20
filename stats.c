@@ -8,10 +8,9 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     float sum=0.0;
     for (int i=0;i<setlength;i++)
     {
-        sum =sum+numberset[i];
+        sum+=numberset[i];
     }
-    float avg=sum/setlength;
-    s.average =avg;
+    s.average = sum/setlength;
     return s;
 }
 
