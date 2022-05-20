@@ -1,8 +1,7 @@
 #include "stats.h"
-#include <stdio.h>
 
 struct Stats compute_statistics(const float* numberset, int setlength) {
-    int n;
+    int n,sum;
     float avg;
     struct Stats s;
     s.average = 0;
@@ -10,8 +9,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     s.max = 0;
     for (int i = 0; i < setlength; ++i) {
     sum += num[i];
-    avg = sum / n;
-    printf("Average = %.2f", avg);
+    s.average = sum / n;
     return s;
 }
 
