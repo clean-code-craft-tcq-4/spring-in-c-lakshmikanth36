@@ -13,8 +13,8 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     s.average = sum/setlength;
     s.max=numberset[0];
     for(i = 0; i < setlength; i++){
-        if(numberset[i] > max){
-            max = numberset[i];
+        if(numberset[i] > s.max){
+            s.max = numberset[i];
         }
     }	
     return s;
