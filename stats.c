@@ -9,20 +9,14 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     for (int i=0;i<setlength;i++)
     {
         sum+=numberset[i];
-    }
-    s.average = sum/setlength;
-    s.max=numberset[0];
-    for(int i = 0; i < setlength; i++){
+        s.average = sum/setlength;
+        s.max=numberset[0];
         if(numberset[i] > s.max){
             s.max = numberset[i];
-        }
-    }	
-    s.min=numberset[0];
-    for(int i = 0; i < setlength; i++){
+         s.min=numberset[0];
         if(numberset[i] < s.min){
             s.min = numberset[i];
         }
-    }	
     return s;
 }
 
