@@ -39,3 +39,8 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
 
 int emailAlertCallCount = 0;
 int ledAlertCallCount = 0;
+int check_and_alert(float maxThreshold,int  alerters, computedStats)
+{
+
+}
+
