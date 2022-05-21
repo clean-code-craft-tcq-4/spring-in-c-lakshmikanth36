@@ -23,6 +23,13 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
             s.min = numberset[i];
         }
     }	
+    for(int i = 0;i < setlength; i++){
+       if(numberset[i] == 0){
+          s.average =NAN;
+          s.max=NAN;
+          s.min= NAN;
+         }
+    } 
     return s;
 }
 
