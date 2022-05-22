@@ -36,7 +36,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     } 
     return s;
 }
-Void check_and_alert(float, void (**)(), Stats)
+void check_and_alert(float, void (**)(), Stats)
 {
 }
 
