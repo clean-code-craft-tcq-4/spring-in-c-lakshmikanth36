@@ -36,6 +36,9 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     } 
     return s;
 }
+Void check_and_alert(float, void (**)(), Stats)
+{
+}
 
 int emailAlertCallCount = 0;
 int ledAlertCallCount = 0;
